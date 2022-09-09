@@ -91,3 +91,48 @@ namespace 函数
 
 
 ```
+
+#### 自己写一个TryParse()
+```c#
+using System;
+
+namespace _09自己动手写tryparse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            //bool b = int.TryParse("123", out num);
+            bool b = MyTryParse("1234a", out num);
+            Console.WriteLine(num);
+            Console.WriteLine(b);
+            Console.ReadKey();
+        }
+        /// <summary>
+        /// 自己写的tryParse ,它将字符串转换为数字，如果无法转换成数字，不会抛异常，只会返回bool
+        /// 并且返回值为0
+        /// </summary>
+        /// <param name="str">需要转换成int类型的字符串</param>
+        /// <param name="num">多余的返回值，返回转换成功的数字</param>
+        /// <returns></returns>
+        public static bool MyTryParse(string str, out int num)
+        {
+            try
+            {
+                num = Convert.ToInt32(str);
+                return true;
+            }
+            catch
+            {
+                num = 0;//这里也必须给num赋值
+                Console.WriteLine("不能转换为数字");
+                return false;
+            }
+
+        }
+    }
+}
+
+
+```
