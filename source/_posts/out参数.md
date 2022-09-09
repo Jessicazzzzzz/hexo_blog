@@ -56,6 +56,13 @@ namespace 函数
         //分别提示用户输入用户名和密码
         //写一个方法判断用户输入的是否正确
         //返回给用户一个登录结果，并且还要单独的返回用户的一个登录信息
+        /// <summary>
+        /// 判断登录是否成功
+        /// </summary>
+        /// <param name="name">用户名</param>
+        /// <param name="password">密码</param>
+        /// <param name="message">多余的返回值</param>
+        /// <returns></returns>
         public static bool CheckInput(string name,string password,out string message)
         {      
             if (name != _name)
