@@ -1,7 +1,7 @@
 ---
 title: out参数
 date: 2022-09-09 15:56:43
-tags:
+tags: c#
 ---
 
 ## out 参数的用途

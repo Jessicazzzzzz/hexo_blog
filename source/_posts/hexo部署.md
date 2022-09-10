@@ -1,7 +1,7 @@
 ---
 title: hexo部署
 date: 2022-09-09 12:13:24
-tags:
+tags: hexo
 ---
 
 ## 配置文件
