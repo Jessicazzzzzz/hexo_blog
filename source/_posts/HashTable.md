@@ -5,6 +5,10 @@ tags: c# 面向对象
 ---
 
 ### 键值对
+- 通过键-- 找到value ，那么就意味这这个键必须是唯一的
+- 如果已经有了key ，那么是无法使用add
+- 想要覆盖必须使用索引的方式来覆盖
+
 ```csharp
 // See https://aka.ms/new-console-template for more information
 using System.Collections;
@@ -31,3 +35,6 @@ foreach (var item in hashTable.Keys)
     Console.WriteLine(hashTable[item]);
 }
 ```
+
+### var 关键字
+- 根据变量的类型来判断变量是什么类型，但是它有个问题，就是使用前必须使用给变量赋值
