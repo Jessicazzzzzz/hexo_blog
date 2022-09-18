@@ -83,5 +83,12 @@ using(StreamWriter sw = new StreamWriter("/Users/jessicazhu/Desktop/text.txt",tr
 {
     sw.Write("nihao");
 }
-
+//注意拷贝的相对路径需要在bin/debug中的可以执行的文件一起
+using(FileStream fr1 = new FileStream("text1.txt",FileMode.Open,FileAccess.Read))
+{
+    fr1.Read(bytes, 0, bytes.Length);
+    string frString = Encoding.Default.GetString(bytes, 0, bytes.Length);
+    Console.WriteLine(frString);
+}
+Console.ReadKey();
 ```
