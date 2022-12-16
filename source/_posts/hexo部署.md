@@ -29,6 +29,7 @@ tags: hexo
   - 这里我修改了配置，也无法部署，只能手动git push
   -  npm install hexo-deployer-git --save
 - hexo new "" 自动生成到post文件夹中
+  
 
 
 
@@ -36,4 +37,5 @@ tags: hexo
 
 - 直接到网站上操作就可以了
 - npm run build
+- 这样只要每次GIT PUSH 到库中，就自动部署到网站上了
 
